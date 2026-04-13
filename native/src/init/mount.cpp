@@ -232,7 +232,7 @@ void MagiskInit::setup_tmp(const char *path) noexcept {
     chdir(path);
 
     // Prepare worker
-    xmount("NCL", WORKERDIR, "tmpfs", 0, "mode=755");
+  //  xmount("NCL", WORKERDIR, "tmpfs", 0, "mode=755");
 
     // Use isolated devpts if kernel support
    // if (access("/dev/pts/ptmx", F_OK) == 0) {
