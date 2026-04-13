@@ -884,7 +884,7 @@ impl MagiskD {
         // step, treating Magisk just like a special "module".
 
         if get_magisk_tmp() != "/sbin" || get_path_env().split(":").all(|s| s != "/sbin") {
-            inject_magisk_bins(&mut system, self.is_emulator);
+        //    inject_magisk_bins(&mut system, self.is_emulator);
         }
 
         // Handle zygisk
